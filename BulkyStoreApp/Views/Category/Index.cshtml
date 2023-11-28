@@ -1,8 +1,8 @@
 @model List<Category>
 <h2>Category List</h2>
-<table class="table table-bordered table-striped">
+<table class="table table-hover">
     <thead>
-    <tr>
+        <tr class="table-light">
         <th>CateGory Name</th>
         <th>Display Order</th>
     </tr>
@@ -10,7 +10,7 @@
     <tbody>
       @foreach (var obj in Model.OrderBy(c =>c.Name))
       {
-          <tr>
+            <tr class="table-light">
               <td>@obj.Name</td>
               <td>@obj.DisplayOrder.ToString()</td>
           </tr>
