@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using BulkyStoreApp.Models;
+using Bulky.Models.Models;
 
 namespace BulkyStoreApp.Controllers;
 
