@@ -12,10 +12,22 @@ public class CategoryController : Controller
         _dbContext = dbContext;
     }
     
-    // GET
     public IActionResult Index()
     {
         List<Category> categories = _dbContext.Categories.ToList();
         return View(categories);
+    }
+
+    public IActionResult Create()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Create(Category category)
+    {
+        _dbContext.Categories.Add(category);
+        _dbContext.SaveChanges();
+        return RedirectToAction("Index");
     }
 }

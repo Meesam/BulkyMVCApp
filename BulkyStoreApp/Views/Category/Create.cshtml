@@ -1,0 +1,21 @@
+﻿@model Category
+
+<form method="post">
+    <fieldset>
+        <legend>Create New Category</legend>
+        
+        <div class="form-group">
+            <label for="categoryName" class="form-label mt-4">Category Name</label>
+            <input type="text" asp-for="Name" class="form-control" id="categoryName" aria-describedby="category" placeholder="Enter Category">
+            <small id="emailHelp" class="form-text text-muted">It must be a string.</small>
+        </div>
+        <div class="form-group">
+            <label for="displayOrder" class="form-label mt-4">Display Order</label>
+            <input type="number" asp-for="DisplayOrder" class="form-control" id="displayOrder" placeholder="Display Order">
+            <small id="displayOrderHelp" class="form-text text-muted">It must be a number only.</small>
+        </div>
+    
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <a asp-controller="Category" asp-action="Index">Back To List</a>
+    </fieldset>
+</form>
