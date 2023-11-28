@@ -1,0 +1,21 @@
+﻿@model Category
+
+<form method="post">
+    <fieldset>
+        <legend>Delete Category</legend>
+
+        <div class="form-group">
+            <label for="categoryName" class="form-label mt-4">Category Name</label>
+            <input type="text" disabled asp-for="Name" class="form-control" id="categoryName" aria-describedby="category" placeholder="Enter Category">
+            
+        </div>
+        <div class="form-group">
+            <label for="displayOrder" class="form-label mt-4">Display Order</label>
+            <input type="number" disabled asp-for="DisplayOrder" class="form-control" id="displayOrder" placeholder="Display Order">
+            
+        </div>
+
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-controller="Category" asp-action="Index">Back To List</a>
+    </fieldset>
+</form>
