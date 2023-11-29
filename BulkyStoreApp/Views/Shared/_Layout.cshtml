@@ -20,7 +20,7 @@
                 <div class="collapse navbar-collapse" id="navbarColor04">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link active" asp-controller="Home" asp-action="Index">
+                            <a class="nav-link active" asp-area="Customer" asp-controller="Home" asp-action="Index">
                                 Home
                                 <span class="visually-hidden">(current)</span>
                             </a>
@@ -32,10 +32,10 @@
                             <a class="nav-link" href="#">Pricing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-action="Privacy" asp-controller="Home">Privacy</a>
+                            <a class="nav-link" asp-area="Customer" asp-action="Privacy" asp-controller="Home">Privacy</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" asp-controller="Category" asp-action="Index">Category</a>
+                            <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
                             
                         </li>
                     </ul>
